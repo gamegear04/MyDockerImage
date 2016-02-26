@@ -10,11 +10,8 @@ RUN apt-get install -y build-essential
 RUN apt-get install wget -y
 RUN apt-get install libcurl4-gnutls-dev -y
 
-
 # Terminal Editor Vim installieren
 RUN apt-get install vim -y
-
-CMD lsb_release -a
 
 # Swift nach installieren
 RUN apt-get install clang libicu-dev -y
