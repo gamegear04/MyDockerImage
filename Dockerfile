@@ -1,6 +1,7 @@
 FROM gamegear2004/mydockerimage:latest
 MAINTAINER darius korzeniewski (Darius_Korzeniewski@web.de)
 
+
 #Festlegen der Umgebungsvariablen
 ENV http_proxy=http://193.174.119.246:80/
 ENV https_proxy=https://193.174.119.246:80/
