@@ -1,5 +1,5 @@
 FROM gamegear2004/mydockerimage:latest
-#MAINTAINER darius korzeniewski (Darius_Korzeniewski@web.de)
+MAINTAINER darius korzeniewski (Darius_Korzeniewski@web.de)
 
 #Arbeitsbereich festlegen
 WORKDIR /home/
