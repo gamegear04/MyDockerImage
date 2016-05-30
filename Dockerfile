@@ -9,6 +9,9 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y build-essential
 RUN apt-get install wget -y
 RUN apt-get install libcurl4-gnutls-dev -y
+RUN apt-get dist-upgrade
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Terminal Editor Vim installieren
 RUN apt-get install vim -y
