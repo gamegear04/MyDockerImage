@@ -5,7 +5,9 @@ MAINTAINER darius korzeniewski (Darius_Korzeniewski@web.de)
 WORKDIR /home/
 
 # Ubuntu auf den aktuellen Stand bringen
+RUN apt-get autoremove -y
 RUN apt-get update && apt-get upgrade -y
+RUN apt-get dist-upgrade
 RUN apt-get autoclean
 RUN apt-get install -y build-essential
 RUN apt-get install wget -y
